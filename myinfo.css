@@ -1,0 +1,85 @@
+/* myinfo.css - Dark Themed Personal Info Card */
+body {
+    background: #181a1b;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card {
+    background: #23272a;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+    padding: 2.5rem 2rem;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 3px solid #7289da;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    background: #2c2f33;
+}
+
+.name {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.role {
+    font-size: 1.1rem;
+    color: #7289da;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #b9bbbe;
+    margin-bottom: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a {
+    color: #7289da;
+    background: #23272a;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+    background: #7289da;
+    color: #23272a;
+}
+<!-- index.html - Personal Info Card -->
+<!DOCTYPE html>
