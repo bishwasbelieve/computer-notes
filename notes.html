@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest Topics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ef 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .latest-topics-box {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(60, 90, 130, 0.12);
+            padding: 36px 32px;
+        }
+        .latest-topics-box h3 {
+            font-size: 2.2rem;
+            margin-bottom: 28px;
+            color: #2a4d69;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .topic-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(60, 90, 130, 0.07);
+            padding: 22px 18px;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .topic-box:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(60, 90, 130, 0.16);
+        }
+        .topic-box h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.18rem;
+            color: #1e3557;
+        }
+        .topic-box a {
+            text-decoration: none;
+            color: #3a7bd5;
+            transition: color 0.15s;
+        }
+        .topic-box a:hover {
+            color: #1e90ff;
+            text-decoration: underline;
+        }
+        .topic-box p {
+            margin: 0;
+            color: #4a5a6a;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            .latest-topics-box {
+                padding: 18px 6px;
+            }
+            .topics-container {
+                gap: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="latest-topics-box">
+        <h3>Latest Topics</h3>
+        <div class="topics-container">
+            <div class="topic-box">
+                <h4><a href="dbms.html">Database Management System</a></h4>
+                <p>Introduction to DBMS concepts, architecture, and applications in real-world scenarios.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Data Communication and Networking</a></h4>
+                <p>Study data transmission, network devices, and communication protocols.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Web Technology II</a></h4>
+                <p>Advanced web technologies including scripting, frameworks, and web services.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Programming in C</a></h4>
+                <p>Learn the fundamentals of C programming, syntax, and problem-solving techniques.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Object Oriented Programming</a></h4>
+                <p>Learn the basics of OOP, including classes, objects, inheritance, and polymorphism.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Software Process Model</a></h4>
+                <p>Understand various software development life cycle models and methodologies.</p>
+            </div>
+            <div class="topic-box">
+                <h4><a href="#">Recent Trends in Physics</a></h4>
+                <p>Explore the latest advancements and discoveries in the field of physics.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
